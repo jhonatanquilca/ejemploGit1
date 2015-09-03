@@ -27,7 +27,7 @@
             android:layout_gravity="bottom|right"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="16dp"
-            android:src="@mipmap/ic_edit"
+            android:src="@mipmap/ic_ed"
             fab:fab_colorNormal="@color/colorNormalMini"
             fab:fab_colorPressed="@color/colorPressedMini"
             fab:fab_colorRipple="@color/colorRippleMini"
