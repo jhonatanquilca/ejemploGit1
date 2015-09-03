@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
+    package="com.example.workstation.ejemplogit1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -27,11 +28,8 @@
             android:layout_gravity="bottom|right"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="16dp"
-            android:src="@mipmap/ic_ed"
-            fab:fab_colorNormal="@color/colorNormalMini"
-            fab:fab_colorPressed="@color/colorPressedMini"
-            fab:fab_colorRipple="@color/colorRippleMini"
-            fab:fab_type="mini" />
+            android:src="@mipmap/ic_edit"
+            />
 
         <TextView
             android:id="@+id/titulo"
