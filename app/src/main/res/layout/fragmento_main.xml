@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-
     android:id="@+id/fragmento_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,7 +22,10 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        fab:fab_colorNormal="@android:color/holo_blue_bright"
+        fab:fab_colorPressed="@android:color/holo_blue_dark"
+        fab:fab_colorRipple="@android:color/background_dark" />
 
 
 </RelativeLayout>

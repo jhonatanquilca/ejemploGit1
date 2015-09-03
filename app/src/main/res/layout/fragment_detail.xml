@@ -29,7 +29,9 @@
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="16dp"
             android:src="@mipmap/ic_edit"
-            />
+            fab:fab_colorNormal="@android:color/holo_blue_bright"
+            fab:fab_colorPressed="@android:color/holo_blue_dark"
+            fab:fab_colorRipple="@android:color/background_dark" />
 
         <TextView
             android:id="@+id/titulo"
