@@ -1,20 +1,29 @@
-package com.example.workstation.ejemplogit1;
+package com.example.workstation.ejemplogit1.ui.actividades;
+
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
+
+import com.example.workstation.ejemplogit1.R;
+import com.example.workstation.ejemplogit1.ui.fragmentos.MainFragment;
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//        setContentView(R.layout.fragmento_detail);
-//        setContentView(R.layout.fragmento_main);
-        setContentView(R.layout.fragmento_frorm_create);
-//        setContentView(R.layout.item_list);
+        setContentView(R.layout.activity_main);
+
+
+//        Creación del fragmento principal
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.contenedor, new MainFragment(), "MainFragment")
+                    .commit();
+        }
 
 
     }

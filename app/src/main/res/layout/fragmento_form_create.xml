@@ -26,7 +26,7 @@
         android:singleLine="true" />
     <!--Descripcion-->
     <EditText
-        android:id="@+id/desripcripcion_input"
+        android:id="@+id/descripcion_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/titulo_input"
