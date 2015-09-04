@@ -17,7 +17,7 @@ import java.util.List;
 public class MetaAdapter extends RecyclerView.Adapter<MetaAdapter.MetaViewHolder>
         implements ItemClickListener {
     /**
-     * Lista de objetos {@link Meta} que representan la fuente de datos
+     * Lista de objetos {@linkMeta} que representan la fuente de datos
      * de inflado
      */
     private List<Meta> items;

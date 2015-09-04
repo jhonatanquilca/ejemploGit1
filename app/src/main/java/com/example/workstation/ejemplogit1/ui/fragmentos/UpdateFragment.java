@@ -88,7 +88,7 @@ public class UpdateFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflando layout del fragmento
-        View v = inflater.inflate(R.layout.fragmento_form, container, false);
+        View v = inflater.inflate(R.layout.fragmento_form_create, container, false);
 
         // Obtención de instancias controles
         titulo_input = (EditText) v.findViewById(R.id.titulo_input);
