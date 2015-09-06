@@ -1,14 +1,12 @@
 package com.example.workstation.ejemplogit1.web;
 
 import android.content.Context;
+import android.widget.Toast;
 //volley
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
-/**
- * Created by OMAR on 04/09/2015.
- */
 public class VolleySingleton {
     // Atributos
     private static VolleySingleton singleton;
@@ -22,6 +20,7 @@ public class VolleySingleton {
 
     /**
      * Retorna la instancia unica del singleton
+     *
      * @param context contexto donde se ejecutarán las peticiones
      * @return Instancia
      */
@@ -34,17 +33,20 @@ public class VolleySingleton {
 
     /**
      * Obtiene la instancia de la cola de peticiones
+     *
      * @return cola de peticiones
      */
     public RequestQueue getRequestQueue() {
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(context.getApplicationContext());
         }
+
         return requestQueue;
     }
 
     /**
      * Añade la petición a la cola
+     *
      * @param req petición
      * @param <T> Resultado final de tipo T
      */

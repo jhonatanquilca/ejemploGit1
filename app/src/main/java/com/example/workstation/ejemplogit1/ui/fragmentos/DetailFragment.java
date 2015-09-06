@@ -81,9 +81,12 @@ public class DetailFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         // Iniciar actividad de actualización
+
                         Intent i = new Intent(getActivity(), UpdateActivity.class);
-                        i.putExtra(EXTRA_ID, extra);
+//                        i.putExtra(EXTRA_ID, extra);
+                        i.putExtra(Constantes.EXTRA_ID, extra);
                         getActivity().startActivityForResult(i, Constantes.CODIGO_ACTUALIZACION);
+
                     }
                 }
         );
@@ -110,7 +113,7 @@ public class DetailFragment extends Fragment {
                 new JsonObjectRequest(
                         Request.Method.GET,
                         newURL,
-                        null,
+                        (String) null,
                         new Response.Listener<JSONObject>() {
 
                             @Override

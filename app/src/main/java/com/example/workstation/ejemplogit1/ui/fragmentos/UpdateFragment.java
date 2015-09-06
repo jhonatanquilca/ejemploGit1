@@ -110,7 +110,6 @@ public class UpdateFragment extends Fragment {
 
         // Obtener valor extra
         idMeta = getArguments().getString(EXTRA_ID);
-
         if (idMeta != null) {
             cargarDatos();
         }
@@ -130,7 +129,7 @@ public class UpdateFragment extends Fragment {
                 new JsonObjectRequest(
                         Request.Method.GET,
                         newURL,
-                        null,
+                        (String) null,
                         new Response.Listener<JSONObject>() {
 
                             @Override
@@ -495,7 +494,7 @@ public class UpdateFragment extends Fragment {
     }
 
     /**
-     * Actualiza la fecha del campo {@linkfecha_text}
+     * Actualiza la fecha del campo fecha_text
      *
      * @param ano Año
      * @param mes Mes

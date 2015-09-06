@@ -26,12 +26,12 @@
             android:layout_alignParentLeft="true"
             android:layout_gravity="bottom|right"
             android:src="@mipmap/ic_edit"
-            fab:fab_colorNormal="@android:color/holo_blue_light"
-            fab:fab_colorPressed="@android:color/holo_blue_dark"
-            fab:fab_colorRipple="@android:color/holo_blue_bright"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_colorPressed="@color/accent"
+            fab:fab_colorRipple="@color/ripple"
             android:layout_marginLeft="16dp"
             fab:fab_type="mini"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="10dp" />
 
         <TextView
             android:id="@+id/titulo"

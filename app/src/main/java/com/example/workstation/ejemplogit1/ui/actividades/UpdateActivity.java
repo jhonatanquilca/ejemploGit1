@@ -27,6 +27,7 @@ public class UpdateActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         String extra = getIntent().getStringExtra(Constantes.EXTRA_ID);
 
         if (getSupportActionBar() != null)

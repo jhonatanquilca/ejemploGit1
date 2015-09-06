@@ -79,6 +79,7 @@ public class MainFragment extends Fragment {
         // Cargar datos en el adaptador
         cargarAdaptador();
 
+
         // Obtener instancia del FAB
         fab = (com.melnykov.fab.FloatingActionButton) v.findViewById(R.id.fab);
 
@@ -103,13 +104,14 @@ public class MainFragment extends Fragment {
      */
     public void cargarAdaptador() {
         // Petición GET
+
         VolleySingleton.
                 getInstance(getActivity()).
                 addToRequestQueue(
                         new JsonObjectRequest(
                                 Request.Method.GET,
                                 Constantes.GET,
-                                null,
+                                (String) null,
                                 new Response.Listener<JSONObject>() {
 
                                     @Override

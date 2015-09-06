@@ -63,11 +63,13 @@ public class DetailActivity extends AppCompatActivity {
             idMeta = getIntent().getStringExtra(Constantes.EXTRA_ID);
 
 
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.contenedor, DetailFragment.createInstance(idMeta), "DetailFragment")
                     .commit();
         }
+
     }
 
     @Override

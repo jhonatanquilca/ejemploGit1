@@ -1,8 +1,5 @@
 package com.example.workstation.ejemplogit1.tools;
 
-/**
- * Created by OMAR on 04/09/2015.
- */
 public class Constantes {
     /**
      * Transición Home -> Detalle
@@ -23,15 +20,15 @@ public class Constantes {
     /**
      * Dirección IP de genymotion o AVD
      */
-    private static final String IP = "http://localhost:";
+    private static final String IP = "http://192.168.1.4:";
     /**
      * URLs del Web Service
      */
-    public static final String GET = IP + PUERTO_HOST + "/wish/obtener_metas.php";
-    public static final String GET_BY_ID = IP + PUERTO_HOST + "/wish/obtener_meta.php";
-    public static final String UPDATE = IP + PUERTO_HOST + "/wish/update_meta.php";
-    public static final String DELETE = IP + PUERTO_HOST + "/wish/delete_meta.php";
-    public static final String INSERT = IP + PUERTO_HOST + "/wish/insert_meta.php";
+    public static final String GET = IP + PUERTO_HOST + "/webservicewish/obtener_metas.php";
+    public static final String GET_BY_ID = IP + PUERTO_HOST + "/webservicewish/obtener_meta.php";
+    public static final String UPDATE = IP + PUERTO_HOST + "/webservicewish/update_meta.php";
+    public static final String DELETE = IP + PUERTO_HOST + "/webservicewish/delete_meta.php";
+    public static final String INSERT = IP + PUERTO_HOST + "/webservicewish/insert_meta.php";
 
     /**
      * Clave para el valor extra que representa al identificador de una meta
